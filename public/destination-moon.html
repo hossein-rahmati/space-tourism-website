@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../src/CSS/destination.css" />
+    <title>Space tourism website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- this is navbar -->
+      <nav>
+        <span
+          ><img class="nav__logo" src="../assets/shared/logo.svg" alt="logo"
+        /></span>
+        <div class="nav__items">
+          <a href="./index.html">HOME</a>
+          <a href="./destination-moon.html">DESTINATION</a>
+          <a href="./crew-pilot.html">CREW</a>
+          <a href="">TECHNOLOGY</a>
+        </div>
+        <div class="nav__backdrop"></div>
+        <span class="nav__hamburger">
+          <img src="../assets/shared/icon-hamburger.svg" alt="hamburger" />
+        </span>
+      </nav>
+      <!-- this is navbar -->
+
+      <!-- this is main content -->
+      <div class="content">
+        <div class="destination__first-content">
+          <p class="destination__header">PICK YOUR DESTINATION</p>
+          <img
+            class="destination__img"
+            src="../assets/destination/image-moon.webp"
+          />
+        </div>
+
+        <div class="destination__second-content">
+          <div class="destination__planets">
+            <a href="./destination-moon.html" style="border-bottom: 2px solid #fff;">MOON</a>
+            <a href="./destination-mars.html">MARS</a>
+            <a href="./destination-europa.html">EUROPA</a>
+            <a href="./destination-titan.html">TITAN</a>
+          </div>
+
+          <h1>MOON</h1>
+          <p class="destination__moon_footer-p">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <hr>
+          <div class="destination__moon__footer-detail">
+            <div class="destination__moon__footer__left-detail">
+              <p style="opacity: 0.5;margin-bottom: 0.5rem;">Avg. distance</p>
+              <p style="font-size: 18px;">384,400 km</p>
+            </div>
+            <div class="destination__moon__footer__right-detail">
+              <p style="opacity: 0.5;margin-bottom: 0.5rem;">Est. travel</p>
+              <p style="font-size: 18px;">3 days</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- this is main content -->
+    </div>
+    <script src="../src/JS/home.js"></script>
+  </body>
+</html>

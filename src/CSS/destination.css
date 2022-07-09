@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.container {
+    height: 100vh;
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    width: 2rem;
+    margin: 1rem;
+}
+
+.nav__hamburger {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.nav__items {
+    margin: 1rem;
+    z-index: 20;
+    position: fixed;
+    right: 0;
+    transition: all ease-in 100ms;
+    border-radius: 5px;
+    padding: 0.5rem;
+    display: none;
+    flex-direction: column;
+    background-color: #64748b;
+    width: 12rem;
+}
+
+.nav__items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.nav__backdrop {
+    display: none;
+    background-color: #000;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+.content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.destination__header {
+    color: #fff;
+}
+
+.destination__img {
+    width: 10rem;
+    margin: 1rem 0 2rem 0;
+    animation: rotation 100s infinite linear;
+}
+
+.destination__second-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+}
+
+.destination__planets {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination__second-content a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+h1 {
+    color: #fff;
+    margin: 1rem;
+}
+
+.destination__moon_footer-p {
+    color: #fff;
+    line-height: 1.5rem;
+    opacity: 0.7;
+}
+
+hr {
+    width: 18rem;
+    margin: 0.5rem 0 0.5rem 0;
+    opacity: 0.5;
+}
+
+.destination__moon__footer-detail {
+    display: flex;
+}
+
+.destination__moon__footer__left-detail {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.destination__moon__footer__right-detail {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+
+    .nav__hamburger {
+        display: none;
+    }
+
+    .nav__items {
+        display: flex;
+        flex-direction: row;
+        width: 31rem;
+        background-color: #192434;
+    }
+
+    .nav__logo {
+        width: 3rem;
+    }
+
+    .container {
+        background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    }
+
+    .destination__second-content {
+        width: 25rem;
+    }
+
+    .destination__second-content a {
+        font-size: 20px;
+    }
+
+    h1 {
+        margin-top: 2rem;
+    }
+
+    hr{
+        width: 25rem;
+    }
+
+    .destination__header {
+        font-size: 20px;
+    }
+
+    .destination__moon_footer-p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        background-image: url("../../assets/destination/background-destination-desktop.jpg");
+    }
+
+    .nav__items {
+        opacity: 0.6;
+        width: 32rem;
+        background-color: #192434;
+    }
+
+    .nav__items:first-child {
+        border-bottom: 1px solid #fff;
+    }
+
+    .nav__items:hover {
+        opacity: 0.9;
+    }
+
+    .nav__logo {
+        width: 3rem;
+        margin: 2rem;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    .destination__img {
+        width: 20rem;
+    }
+
+    h1{
+        text-align: left;
+        font-size: 50px;
+    }
+
+    hr{
+        margin: 2rem 0;
+    }
+
+    .destination__moon_footer-p{
+        text-align: left;
+    }
+
+    .destination__moon__footer__right-detail{
+        text-align: left;
+    }
+
+    .destination__moon__footer__left-detail {
+        text-align: left;
+    }
+
+    .destination__moon__footer-detail {
+        width: 27rem;
+    }
+
+    .destination__moon_footer-p{
+        font-size: 20px;
+        line-height: 2rem;
+    }
+}

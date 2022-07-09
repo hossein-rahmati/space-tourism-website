@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    width: 2rem;
+    margin: 1rem;
+}
+
+.nav__hamburger {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.nav__items {
+    margin: 1rem;
+    z-index: 20;
+    position: fixed;
+    right: 0;
+    transition: all ease-in 100ms;
+    border-radius: 5px;
+    padding: 0.5rem;
+    display: none;
+    flex-direction: column;
+    background-color: #64748b;
+    width: 12rem;
+}
+
+.nav__items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.nav__backdrop {
+    display: none;
+    background-color: #000;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+.mainContent {
+    padding: 1rem;
+    width: 100vw;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
