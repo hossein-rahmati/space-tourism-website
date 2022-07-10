@@ -1,27 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../src/CSS/crew-specialist.css" />
+    <title>Space tourism website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- this is navbar -->
+      <nav>
+        <span
+          ><img class="nav__logo" src="../assets/shared/logo.svg" alt="logo"
+        /></span>
+        <div class="nav__items">
+          <a href="./index.html">HOME</a>
+          <a href="./destination-moon.html">DESTINATION</a>
+          <a href="./crew-pilot.html">CREW</a>
+          <a href="./technology-vehicle.html">TECHNOLOGY</a>
+        </div>
+        <div class="nav__backdrop"></div>
+        <span class="nav__hamburger">
+          <img src="../assets/shared/icon-hamburger.svg" alt="hamburger" />
+        </span>
+      </nav>
+      <!-- this is navbar -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+      <!-- this is main content -->
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+      <div class="content">
+        <div class="crew__first-content">
+          <p class="crew__header">MEET YOUR CREW</p>
+          <p class="crew__skill">MISSION SPECIALIST</p>
+          <h1>MARK SHUTTLEWORTH</h1>
+          <p class="crew__footer-p">
+            Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+            the Linux-based Ubuntu operating system. Shuttleworth became the first South 
+            African to travel to space as a space tourist.
+          </p>
+          <div class="crew__pagination">
+            <a href="./crew-pilot.html"><i class="fa-solid fa-circle"></i></a>
+            <a href="./crew-commander.html"
+              ><i class="fa-solid fa-circle"></i
+            ></a>
+            <a href="./crew-engineer.html"
+              ><i  class="fa-solid fa-circle"></i
+            ></a>
+            <a href="./crew-specialist.html"
+              ><i style="opacity: 1" class="fa-solid fa-circle"></i
+            ></a>
+          </div>
+        </div>
+        <div class="crew__second-content"></div>
+      </div>
 
-  02 Meet your crew
-
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
-  the Linux-based Ubuntu operating system. Shuttleworth became the first South 
-  African to travel to space as a space tourist.
-</body>
+      <!-- this is main content -->
+    </div>
+    <script src="../src/JS/home.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+ 
+
+  
+  
+
+

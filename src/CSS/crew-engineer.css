@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    width: 2rem;
+    margin: 1rem;
+}
+
+.nav__hamburger {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.nav__items {
+    margin: 1rem;
+    z-index: 20;
+    position: fixed;
+    right: 0;
+    transition: all ease-in 100ms;
+    border-radius: 5px;
+    padding: 0.5rem;
+    display: none;
+    flex-direction: column;
+    background-color: #64748b;
+    width: 12rem;
+}
+
+.nav__items a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.nav__backdrop {
+    display: none;
+    background-color: #000;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+.content {
+    padding: 1rem;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew__first-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.crew__header {
+    margin: 2rem 2rem;
+}
+
+.crew__skill {
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.crew__footer-p {
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.crew__pagination {
+    display: flex;
+}
+
+.crew__pagination a {
+    all: unset;
+}
+
+.crew__pagination i {
+    margin: 3rem 0.5rem;
+    cursor: pointer;
+}
+
+.fa-circle {
+    opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+    .container {
+        background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    }
+
+    .nav__hamburger {
+        display: none;
+    }
+
+    .nav__items {
+        display: flex;
+        flex-direction: row;
+        width: 31rem;
+        background-color: #192434;
+    }
+
+    .nav__logo {
+        width: 3rem;
+    }
+
+    .crew__footer-p {
+        width: 40rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    }
+
+    .nav__items {
+        opacity: 0.6;
+        width: 31rem;
+        background-color: #192434;
+    }
+
+    .nav__items:first-child {
+        border-bottom: 1px solid #fff;
+    }
+
+    .nav__items:hover {
+        opacity: 0.9;
+    }
+
+    .nav__logo {
+        width: 3rem;
+        margin: 2rem;
+    }
+
+    .crew__header {
+        margin: 2rem 0;
+    }
+
+    .content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .crew__first-content {
+        text-align: left;
+        align-items: flex-start;
+        font-size: x-large;
+    }
+
+    .crew__footer-p {
+        width: 30rem;
+    }
+
+    .crew__second-content {
+        width: 30rem;
+        height: 30rem;
+        background-image: url("../../assets/crew/image-anousheh-ansari.webp");
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+}
