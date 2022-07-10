@@ -9,12 +9,15 @@
 
 .container {
     height: 100vh;
-    background-image: url("../../assets/home/background-home-mobile.jpg");
+    background-image: url("../../assets/technology/background-technology-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+body {
+    background-color: #0B0E17;
+}
 
 nav {
     display: flex;
@@ -67,46 +70,66 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
 }
 
-.content__upper-p {
+.tech__first-content {
     color: #fff;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tech__header {
+    margin: 1rem;
+}
+
+.tech__pagination {
+    display: flex;
+}
+
+.tech__pagination a {
+    text-decoration: none;
+    color: #111;
+    margin: 1rem;
+}
+
+.tech__pagination div {
+    padding: 0.7rem;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
     margin-bottom: 1rem;
+}
+
+.tech__title {
+    opacity: 0.6;
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #fff;
-    margin-bottom: 1rem;
+    margin: 0.5rem;
 }
 
-.content__footer-p {
-    color: #fff;
-    line-height: 2rem;
+.tech__content-p {
+    opacity: 0.6;
+    padding: 2rem;
 }
 
-.content__EXPLORE-link {
-    all: unset;
-    font-size: larger;
+.tech__second-content {
+    width: 16rem;
+    margin-top: 2rem;
 }
 
-.content__EXPLORE-margin {
-    cursor: pointer;
-    padding: 3rem 1rem;
-    margin: 3rem auto;
-    background-color: #fff;
-    border-radius: 100%;
-    width: 8rem;
-    height: 8rem;
+.tech__second-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
 }
 
 @media (min-width: 768px) {
     .container {
-        background-image: url("../../assets/home/background-home-tablet.jpg");
+        background-image: url("../../assets/technology/background-technology-tablet.jpg");
     }
 
     .nav__hamburger {
@@ -124,30 +147,29 @@ h1 {
         width: 3rem;
     }
 
-    h1 {
-        font-size: 5rem;
+    .tech__header {
+        font-size: x-large;
+        margin-top: 2rem;
     }
 
-    .content__upper-p {
-        opacity: 0.6;
+    .tech__title {
+        font-size: larger;
     }
 
-    .content__footer-p {
-        opacity: 0.6;
-        font-size: 20px;
-        max-inline-size: 34rem;
+    h1{
+        font-size: xx-large;
     }
 
-    .content__EXPLORE-margin {
-        width: 10rem;
-        height: 10rem;
-        padding: 4rem 1rem;
+    .tech__content-p {
+        font-size: large;
+        width: 35rem;
     }
 }
 
+
 @media (min-width: 1024px) {
     .container {
-        background-image: url("../../assets/home/background-home-desktop.jpg");
+        background-image: url("../../assets/technology/background-technology-desktop.jpg");
     }
 
     .content {
@@ -164,7 +186,7 @@ h1 {
         background-color: #192434;
     }
 
-    .nav__items:first-child{
+    .nav__items:first-child {
         border-bottom: 1px solid #fff;
     }
 
@@ -177,27 +199,46 @@ h1 {
         margin: 2rem;
     }
 
-    h1 {
-        font-size: 5rem;
+    .content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 10rem;
+    }
+
+    .tech__first-content{
+        align-items: flex-start;
         text-align: left;
     }
 
-    .content__upper-p {
-        opacity: 0.6;
-        text-align: left;
+    .tech__header {
+        font-size: xx-large;
+        margin-top: 2rem;
     }
 
-    .content__footer-p {
-        text-align: left;
-        opacity: 0.6;
-        font-size: 20px;
-        max-inline-size: 34rem;
+    .tech__title {
+        font-size: x-larger;
     }
 
-    .content__EXPLORE-margin {
-        width: 12rem;
-        height: 12rem;
-        padding: 5rem 3rem;
-        margin: 0;
+    h1{
+        font-size: 3rem;
+        margin-left: 0;
+    }
+
+    .tech__content-p {
+        font-size: larger;
+        width: 35rem;
+        padding: 0;
+    }
+
+    .tech__pagination div {
+        padding: 0.8rem 1.5rem;
+        width: 4rem;
+        font-size: x-large;
+        height: 4rem;
+    }
+
+    .tech__second-content {
+        width: 25rem;
     }
 }

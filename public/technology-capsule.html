@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../src/CSS/tech.css" />
+    <title>Space tourism website</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- this is navbar -->
+      <nav>
+        <span
+          ><img class="nav__logo" src="../assets/shared/logo.svg" alt="logo"
+        /></span>
+        <div class="nav__items">
+          <a href="./index.html">HOME</a>
+          <a href="./destination-moon.html">DESTINATION</a>
+          <a href="./crew-pilot.html">CREW</a>
+          <a href="./technology-vehicle.html">TECHNOLOGY</a>
+        </div>
+        <div class="nav__backdrop"></div>
+        <span class="nav__hamburger">
+          <img src="../assets/shared/icon-hamburger.svg" alt="hamburger" />
+        </span>
+      </nav>
+      <!-- this is navbar -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+      <!-- this is main content -->
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+      <div class="content">
+        <div class="tech__first-content">
+          <p class="tech__header">SPACE LAUNCH 101</p>
+          <div class="tech__pagination">
+            <a href="./technology-vehicle.html"
+              ><div style="border: 1px solid #fff; color: #fff">1</div></a
+            >
+            <a href="./technology-spaceport.html"
+              ><div style="border: 1px solid #fff; color: #fff">2</div></a
+            >
+            <a href="./technology-capsule.html"
+              ><div style="background-color: #fff">3</div></a
+            >
+          </div>
+          <p class="tech__title">THE TERMINOLOGY ...</p>
+          <h1>SPACE CAPSULE</h1>
+          <p class="tech__content-p">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+            capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+            you'll spend your time during the flight. It includes a space gym, cinema, 
+            and plenty of other activities to keep you entertained.
+          </p>
+        </div>
+        <div class="tech__second-content">
+          <img src="../assets/technology/image-space-capsule-portrait.jpg" />
+        </div>
+      </div>
 
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Space capsule
-
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
-  you'll spend your time during the flight. It includes a space gym, cinema, 
-  and plenty of other activities to keep you entertained.
-</body>
+      <!-- this is main content -->
+    </div>
+    <script src="../src/JS/home.js"></script>
+  </body>
 </html>
